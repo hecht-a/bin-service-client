@@ -1,0 +1,24 @@
+@import "../../node_modules/tailwindcss/base.css";
+@import "../../node_modules/tailwindcss/components.css";
+@import "../../node_modules/tailwindcss/utilities.css";
+
+* {
+	outline: none;
+	box-sizing: border-box;
+}
+
+pre {
+	outline: none;
+
+	code {
+		margin: 0 0 0 1em !important;
+		padding: 0 !important;
+	}
+}
+
+.line-number {
+	li::before {
+		content: attr(value);
+	}
+}
+
